@@ -1,0 +1,16 @@
+Sinhala-Subtitles-Final/
+├── bot.js
+├── package.json
+├── .env.example
+├── .gitignore
+├── render.yaml
+├── README.md
+├── PROJECT_STRUCTURE.txt
+├── subtitle/
+│   ├── db.js
+│   ├── messages.js
+│   ├── parser.js
+│   ├── tmdb.js
+│   └── zip.js
+└── supabase/
+    └── subtitles.sql

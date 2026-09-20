@@ -1,0 +1,22 @@
+{
+  "name": "sinhala-subtitles-telegram-bot",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Standalone Telegram bot for finding and delivering authorized Sinhala subtitle files stored in a Telegram channel and indexed in Supabase.",
+  "main": "bot.js",
+  "scripts": {
+    "start": "node bot.js",
+    "check": "node --check bot.js && node --check subtitle/parser.js && node --check subtitle/db.js && node --check subtitle/tmdb.js && node --check subtitle/messages.js",
+    "test:notify": "node test-notify.mjs",
+    "test:mapping": "node test-mapping.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "node-telegram-bot-api": "^0.66.0"
+  }
+}

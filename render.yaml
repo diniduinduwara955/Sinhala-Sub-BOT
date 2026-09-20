@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: sinhala-subtitles-telegram-bot
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: TELEGRAM_BOT_TOKEN
+        sync: false
+      - key: SUBTITLE_CHANNEL_CHAT_ID
+        sync: false
+      - key: SUBTITLE_GROUP_CHAT_ID
+        sync: false
+      - key: SUPABASE_URL
+        sync: false
+      - key: SUPABASE_SERVICE_ROLE_KEY
+        sync: false
+      - key: TMDB_API_KEY
+        sync: false
+      - key: PORT
+        value: 8787
+      - key: POLL_INTERVAL_MS
+        value: 1000
+      - key: SEARCH_RESULT_LIMIT
+        value: 10
